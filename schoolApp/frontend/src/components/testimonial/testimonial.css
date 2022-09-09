@@ -1,0 +1,99 @@
+#testimonial {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+.testimonial-container {
+    padding: 1rem;
+}
+.testimonials {
+    background-color: rgba(248, 248, 248, 0.368);
+    overflow: hidden;
+}
+#testimonial > h1{
+    text-align: center;
+}
+.testimonial {
+    display: flex;
+    gap: 0;
+    width: 95%;
+    margin: 0 auto;
+    padding: 3rem;
+    color: #fff;
+    backdrop-filter: blur(16px);
+}
+.none {
+    display: none !important;
+}
+.testimonial img {
+    width: 40vw;
+    aspect-ratio: 1/0.75;
+}
+.testi-right {
+    width: 100%;
+    padding: 3rem 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgba(112, 129, 255, 0.838);
+    position: relative;
+}
+.fade-left {
+    animation: fade-left;
+    animation-duration: 1.5s;
+}
+@keyframes fade-left {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+}
+.stu-t {
+    width: 90%;
+    position: absolute;
+    top: 36%;
+    font-size: 1.1rem;
+}
+
+    /* ====================Media queries medium devices=========================== */
+    @media screen and (max-width: 1024px) {
+        #testimonial {
+            transform: scale(0.95);
+        }
+        .testimonial {padding: 0;}
+        .testimonial-container {padding: 0;}
+        .testi-right {
+            padding: 1rem;
+        }
+    }
+
+    /* ====================Media queries medium devices=========================== */
+    @media screen and (max-width: 768px) {
+        .testimonial {
+            display: block;
+        }
+        .testimonial img {
+            width: 100%;
+            margin: 0 auto;
+            /* aspect-ratio: 1/0.6 ; */
+        }
+        .testimonials {
+            width: 85%;
+            overflow: hidden;
+            margin: 0 auto;
+            height: fit-content;
+        }
+        .testimonial {
+            height: 100%;
+        }
+        .testi-right {
+            text-align: center;
+            border-radius: 0.5rem;
+            margin-top: -1rem;
+        }
+        .stu-t {
+            margin-top: 1rem;
+            position: static;
+            width: 100%;
+        }
+    }
+
+
+
+

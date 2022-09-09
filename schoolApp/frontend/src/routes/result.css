@@ -1,0 +1,120 @@
+#result {
+    width: 78%;
+    min-height: 100vh;
+    margin-left: 22%;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+/* .result-container {
+} */
+.result-container ::-webkit-scrollbar {
+    background-color: #e6e4e4;
+    width: 0.5rem;
+  }
+.result-container ::-webkit-scrollbar-thumb {
+    background-color: #5261ff;
+    border-radius: 0.2rem;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+  }
+/* #show-result {
+} */
+.t-x-t-result {
+    background-color: blue;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.t-x-t-result:hover {
+    background-color: rgb(30, 1, 198);
+}
+.v-prv-rr:hover {
+    background-color: rgb(3, 54, 172) !important;
+}
+.result-tta {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.v-prv-rr {
+    width: max-content;
+    background-color: rgb(4, 28, 137);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    margin: 1rem auto 7rem auto;
+    font-weight: 700;
+    cursor: pointer;
+}
+.result-p-hol-f table tr:nth-child(even){
+    background-color: #7e7e7e;
+}
+
+.result-p-hol-f table tr td{
+    border: 1px solid rgba(197, 196, 196, 0.63);
+    padding: 0.3rem 1rem;
+}
+.st-table {
+    border: 2px solid #7e7e7e;
+    box-shadow: 1px 1px 3px rgb(167, 151, 151);
+    width: 97%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.term-title {
+    text-align: center;
+    padding: 0.7rem 0;
+}
+.max-content {
+    width: max-content;
+}
+.result-tb-tdb {
+    background-color: rgb(255 255 255) !important;
+    border: 1.1px solid blue !important;
+    color: rgba(46, 46, 240, 0.774) !important;
+    font-weight: 900 !important;
+}
+.result-p-hol-f table tr th{
+    color: #fff;
+    padding: 0.5rem 1rem ;
+}
+.result-p-hol-f {
+    width: 98%;
+    overflow: auto;
+    margin: 0 auto 2rem auto;
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (min-width: 1900px) {
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    .up-p-img {
+        width: 67%;
+    }
+    .update-portal-pp {
+        padding: 1rem;
+    }
+    .result-container ::-webkit-scrollbar {
+        display: none;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 880px) {
+ #result {
+    width: 98%;
+    margin: 0 auto;
+ }
+}
+@media screen and (max-width: 600px) {
+    .up-p-img {
+        width: 78%;
+        margin: 0 11%;
+    }
+}

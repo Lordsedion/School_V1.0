@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Jost:ital,wght@0,500;0,400;0,500;1,500&family=Open+Sans:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --color-bg: #ffffff;
+  --color-bg-dark: #050505;
+  --color-bg-var: #D8E4FF;
+  --color-primary: #1d0aaa;
+  --color-primary-var: #00120B;
+  --color-primary-var-2: #c9f8ff;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #2d2c2c;
+  --color-darker: #131313;
+  --color-light: #eae6e6;
+  --container-width-lg: 95%;
+  --container-width-md: 97%;
+  --container-width-ms: 97%;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Edu TAS Beginner', 'cursive';
+font-family: 'Jost', sans-serif;
+font-family: 'Open Sans', sans-serif;
+  background-color: #cf1010;
+  color: var(--color-black);
+  line-height: 1.7;
+  overflow-x: hidden;
+  /* background: url("../static/Images/bg/bgi.png"); */
+  background-color: #ffffff;
+  
+}
+
+::-webkit-scrollbar {
+  background-color: #808080;
+  width: 0.8rem;
+  
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 0.2rem;
+  width: 90%;
+  cursor: pointer;
+}
+.black {
+  color: #000;
+}
+.bg-blue {
+  background-color: blue !important;
+}
+.underline {
+  text-decoration: underline;
+}
+.grid {
+  display: grid;
+}
+.bold-1 {
+  font-weight: 600;
+}
+.bold-2 {
+  font-weight: 700;
+}
+.bold-3 {
+  font-weight: 800;
+}
+.bold-4 {
+  font-weight: 900;
+}
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+a {
+  transition: var(--transition);
+  width: max-content;
+}
+/* #portal-elements {
+} */
+.portal-elements-right {
+  width: 79%;
+  margin-left: 21%;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+  .container {
+      width: var(--container-width-md);
+  }
+  h1 {
+      font-size: 1.5rem;
+  }
+}
+    /* ====================Media queries medium devices=========================== */
+    @media screen and (max-width: 900px) {
+      .portal-elements-right {
+        width: 99%;
+        margin-left: 0;
+      }
+  }
+/* ==========================Media queries small devices====================== */
+@media screen and (max-width: 600px) {
+  .container {
+      width: var(--container-width-ms);
+  }
+  h1 {
+      font-size: 1.5rem;
+  }
+}

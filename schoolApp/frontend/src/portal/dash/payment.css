@@ -1,0 +1,50 @@
+.payment-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    min-width: 25%;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.p-con-item {
+    width: 30%;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    color: var(--color-dark);
+    background-color: rgb(208, 235, 255);
+    border-radius: 0.3rem;
+}
+.l-pv-fail-icon {
+    font-size: 2.8rem;
+    color: rgb(255, 101, 101);
+}
+.l-pv-good-icon {
+    font-size: 3.5rem;
+    color: green;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 600px) {
+    .payment-container {
+        flex-direction: column;
+        align-items: stretch;
+        width: 80%;
+        gap: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #payment, #prosp, #result{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p-con-item {
+        width: 100%;
+    }
+}

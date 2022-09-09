@@ -1,0 +1,137 @@
+#upcoming {
+    margin-top: -1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.upt-t {
+    text-align: center;
+    margin: 1.6rem 0;
+}
+.upcoming-container {
+    display: flex;
+    border-radius: 0.1rem;
+    padding: 1rem;
+}
+
+.up-left {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    width: 67%;
+}
+.up-right {
+    cursor: pointer;
+    transform: translateY(15%);
+    background-image: url('../../../static/Images/bg/bgi.png');
+    width: 30%;
+    border-radius: 0.3rem;
+    border: 1px solid rebeccapurple;
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+    height: fit-content;
+    margin-left: auto;
+}
+.u-r-h-title {
+    padding: 0.5rem 0 1rem 0;
+}
+.u-r-e-l-item {
+    padding: 0.1rem 1rem;
+    display: flex;
+    background-color: #fff;
+    color: rebeccapurple;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.v-a-u {
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+.u-r-left {
+    width: fit-content;
+    padding: 0.6rem 0.4rem;
+    border-right: 1px solid rgba(102, 51, 153, 0.481);
+}
+.u-r-month {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 900;
+}
+.u-r-date {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 900;
+}
+.u-r-right {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+}
+.up-left-item {
+    padding: 1rem;
+    width: 85%;
+    border-radius: 0.4rem;
+    text-align: center;
+    border: 1px solid rgba(200, 200, 200, 0.796);
+}
+.up-icon {
+    font-size: 3rem;
+    color: rebeccapurple;
+}
+.event-icon {
+    font-size: 2.5rem;
+}
+.u-r-head {
+    display: flex;
+    background-color: rebeccapurple;
+    color: #fff;
+    align-items: center;
+    padding: 0.4rem 2rem 0.4rem 2rem;
+    border-bottom: 1px solid grey;
+}
+.up-left-t {
+    color: rebeccapurple;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    .up-left-item {
+        width: 98%;
+    }
+    .upcoming-container {
+        display: block;
+    }
+    .up-left {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .up-right {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .up-right {
+        width: 64%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .up-right {
+        width: 100%;
+    }
+    .up-left {
+        grid-template-columns: auto;
+    }
+    .up-left-item {
+        width: 90%;
+        margin: -1rem auto;
+        transform: scale(0.9);
+        row-gap: 0;
+        column-gap: 0;
+    }
+}

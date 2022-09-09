@@ -1,0 +1,222 @@
+#aboutPage {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.about-container {
+    padding: 0 0 3rem 0;
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+.abtttt {
+    padding: 2rem 0;
+    background-color: rgba(124, 123, 123, 0.815);
+    backdrop-filter: blur(15px);
+    color: #fff;
+}
+.about-us-rr-text {
+    padding: 2rem 0;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.abtttt> h1 {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 2.2rem;
+    width: fit-content;
+    padding: 0 1rem;
+    border-bottom: 6px solid #282727;
+    border-radius:3px;
+}
+.blg-img {
+    width: 25vw;
+    border-radius: 0.5rem;
+    height: 20vw;
+}
+.blog-post-content {
+    margin-top: 3rem;
+}
+.blog-post-content-text {
+    padding-top: 1rem;
+    width: 97%;
+}
+.admission-11t {
+    text-align: center;
+    margin: 1.6rem 0;
+}
+.blog-about-p {
+    margin-top: 1rem;
+     background-color: #fff;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+}
+.h2-wlc-title {
+    border-bottom: 6px solid blue;
+    border-radius:3px;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    padding: 0 1rem;
+}
+.section-appage345 {
+    margin-bottom: 7rem;
+}
+
+.section-admot-cl33-container {
+    display: grid;
+    gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+}
+.section-admot-cl33:hover {
+    box-shadow: 1px 1px 5px rgb(170, 169, 169);
+}
+.section-admot-cl33 {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid rgb(136, 134, 134);
+    border-radius: 0.3rem;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++ Teachers          ++++++++++++++++++============================ */
+
+.meet-staffs {
+    margin: 5rem auto 3rem auto; 
+    font-weight: 700;
+    width: fit-content;
+    padding: 0 1rem;
+    text-align: center;
+    border-bottom: 5px solid blue;
+}
+.teacher-img-abt-o {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+}
+.staffs-items {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+}
+.teacher-item:hover{
+    box-shadow: 1px 1px 3px rgb(165, 164, 164);
+}
+.teacher-item {
+    flex-direction: column;
+    display: flex;
+    margin: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border: 1px solid rgb(224, 221, 221);
+    border-radius: 0.3rem;
+
+}
+.staff-name {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.staff-tro-t {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* conducive learning environements */
+
+.section-sw-facc {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    background: #e6e4e4;
+}
+.sw-facc-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+.sw-facc-t {
+    text-align: center;
+}
+.sw-facc-item {
+    margin: 5rem 0;
+}
+@keyframes fadetoblock {
+    from {opacity: 0.3;}
+    to {opacity: 1}
+}
+.fade-to-block {
+    display: block;
+    animation: fadetoblock 3s ease-out;
+}
+.sw-facc-item-img-slide {
+    position: relative;
+}
+.slide-left-arr-w {
+    position: absolute;
+    top: 50%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    left: 3%;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.slide-right-arr-w {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 700;
+    top: 50%;
+    right: 3%;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+/* ====================Media queries large devices=========================== */
+@media screen and (min-width: 1900px) {
+    .staffs-items {
+        grid-template-columns: auto auto auto;
+    }
+}
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    .blog-about-p {
+        flex-direction: column-reverse;
+    }
+    .blg-img {
+        width: 46vw;
+        height: 28vw;
+        border-radius: 0.3rem;
+    }
+    .blog-post-content-text {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .staffs-items {
+        grid-template-columns: auto;
+    }
+    .section-sw-facc {
+        width: 100%;
+    }
+    .sw-facc-img {width: 100%;}
+    .section-admot-cl33-container {
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .blg-img {
+        width: 90vw;
+        height: 60vw;
+        border-radius: 0.3rem;
+    }
+}

@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 768px) {
+    .char-d {
+        display: none !important;
+    }
+    #performance {
+    display: none;
+}
+#perf-m {
+    display: none;
+}
+ }

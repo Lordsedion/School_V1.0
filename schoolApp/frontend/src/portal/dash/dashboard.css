@@ -1,0 +1,213 @@
+#dashboard {
+    width: 100%;
+    overflow: hidden;
+    /* height: fit-content; */
+    margin-top: 0rem;
+    padding: 0rem 1.2rem 2rem 2rem;
+}
+
+.d-general {
+    display: grid;
+    position: sticky;
+    top: 0;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+#performance {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* #result {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 3rem;
+    padding-top: 0.4rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+} */
+#payment {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding-top: 0.4rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+}
+#prosp {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding-top: 0.4rem;
+    margin-right: 1rem;
+    border-top: 1px solid rgb(234, 233, 233);
+    padding-bottom: 2rem;
+}
+
+.ds-ttl {
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: rgb(5, 188, 15);
+}
+
+.dash-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #fbca6e;
+}
+
+.dash-cjs-h:hover {
+    box-shadow: 1px 1px 10px #555454;
+}
+
+.dash-cjs-h {
+    height: 90%;
+    transform: scale(0.85);
+    min-width: 32%;
+    margin-left: -2rem;
+    height: fit-content;
+    box-shadow: 1px 1px 8px rgb(154, 153, 153);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-cjs-h-left h2 {
+    text-align: center;
+    margin-top: 0.7rem;
+}
+
+.d-cjs-h-left {
+    width: 92%;
+    position: relative;
+}
+
+.blue {
+    color: blue;
+}
+
+.bb-blue {
+    border-bottom: 3px solid blue;
+}
+
+.green {
+    color: #2fff32;
+}
+
+.bb-green {
+    border-bottom: 3px solid #2fff32;
+}
+
+.bb-purple {
+    border-bottom: 3px solid rebeccapurple;
+}
+
+.rebeccapurple {
+    color: rebeccapurple;
+}
+
+.d-cjs-h-left h4 {
+    position: absolute;
+    font-size: 2.6rem;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.d-cjs-h-right {
+    width: 6%;
+    display: none;
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 1024px) {
+    .d-cjs-h-left h4 {
+        font-size: 2rem;
+    }
+}
+
+/* ====================Media queries medium devices=========================== */
+@media screen and (max-width: 900px) {
+    .d-general {
+        width: 100vw;
+        padding: 0.6rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dash-content {
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .dash-content {
+        margin-left: 0;
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .cjs-donot {
+        display: none !important;
+    }
+
+    #dashboard {
+        padding: 0.5rem;
+    }
+
+    .dash-cjs-h {
+        width: 47%;
+        height: 5rem;
+        margin-left: 1rem;
+    }
+
+    .d-cjs-h-left h4 {
+        position: absolute;
+        left: 90%;
+    }
+
+    .d-cjs-h-left h2 {
+        position: absolute;
+        top: 0%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .d-cjs-h-left h4 {
+        font-size: 1.85rem;
+        position: absolute;
+        top: 50%;
+        left: 90%;
+    }
+
+    .dash-cjs-h {
+        width: 90vw;
+        border-bottom-width: 9px;
+        transform: scale(1);
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-image: url('../../Images/bgi.png'); */
+        background-color: rgb(255, 255, 255);
+        height: 5rem;
+    }
+    .dash-content {
+        display: block;
+    }
+}

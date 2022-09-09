@@ -1,0 +1,103 @@
+.flexer {
+    background-color: #fff;
+}
+
+#vertical-nav {  
+    height: 100vh;
+    background:#f2f2f2e2;
+    backdrop-filter: blur(15px);
+    width: 21%;
+    position: fixed;
+    overflow: hidden;
+    padding-left: 0.6rem;
+    padding-right: 0.3rem;
+}
+.v-nav-container {
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+}
+.vnav-p-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.vnav-tt {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    align-items: center;
+    margin: 0;
+    background-color: #fff;
+}
+.ssp-name {
+    width: fit-content;
+}
+@keyframes feade {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+.fadde-left {
+    display: block !important;
+    z-index: 9;
+    width: max-content !important;
+    padding-right: 1rem;
+    animation: feade;
+    animation-duration: 0.3s;
+}
+.hamgurger-sportal {
+    display: none;
+    position: fixed;
+    top: 1%;
+    z-index: 999;
+    left: 92%;
+    width: 5%;
+    height: 3rem;
+    color: black;
+}
+.sp-icon {
+    font-size: 1.3rem;
+    color: blue;
+}
+.vlwi-n {
+    font-weight: 600;
+    color: blue;
+}
+.v-lw-items {
+    margin: 0.6rem 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    color: #000;
+    gap: 1rem;
+}
+.sp-at-s {
+    background-color: #fff;
+    color: rebeccapurple;
+}
+.sp-at-s .vlwi-n {
+    font-weight: 600 !important;
+    color: rebeccapurple;
+}
+.sp-at-s .sp-icon {
+    font-weight: 600 !important;
+    color: rebeccapurple;
+}
+.sp-at-s .v-lw-items {
+    background-color: #fff;
+}
+.vnav-lower {
+    margin-top: 2rem;
+}
+
+    /* ====================Media queries medium devices=========================== */
+    @media screen and (max-width: 880px) {
+        #vertical-nav {
+           display: none; 
+        }
+        .hamgurger-sportal {
+            display: block;
+        }
+    }
