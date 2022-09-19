@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 .result-p-hol-f table tr:nth-child(even){
-    background-color: #7e7e7e;
+    background-color: #e6e6e6;
 }
 
 .result-p-hol-f table tr td{

@@ -39,6 +39,9 @@ font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   
 }
+.white {
+  color: #fff !important;
+}
 
 ::-webkit-scrollbar {
   background-color: #808080;
